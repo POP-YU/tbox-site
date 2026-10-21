@@ -108,7 +108,7 @@
       <thead><tr><th>声称</th><th>验证方式</th></tr></thead>
       <tbody>
         <tr><td>浮窗真的置顶、真的点击穿透</td><td>安装后运行下面的命令，输出里直接给窗口层级与透明参数</td></tr>
-        <tr><td>渲染是逐像素、背景全透明</td><td>同上，输出白字 RGB(255,255,255)、A=179，背景 A=0</td></tr>
+        <tr><td>渲染是逐像素、背景全透明</td><td>同上，输出米白字 RGB(243,241,233)、A=255，背景 A=0</td></tr>
         <tr><td>安装包没有被改动</td><td><a href="download.html">下载页</a>给出 SHA256，自己算一遍对一下</td></tr>
         <tr><td>激活状态可核对</td><td><a href="activate.html">激活页</a>有完整五步与失败排查</td></tr>
       </tbody>
@@ -125,7 +125,7 @@
       <tr><td><code>layer_mode=ULW_ALPHA</code></td><td><code>ULW_ok=True</code></td><td>逐像素分层渲染真的生效</td></tr>
       <tr><td><code>TokenUIAccess=True</code></td><td>—</td><td>拿到 UIAccess 特权，才能真正盖在全屏之上</td></tr>
       <tr><td><code>DisplayAffinity=0x11</code></td><td>—</td><td>0x11 = 排除出抓屏（内容保护）</td></tr>
-      <tr><td><code>textPixelsMaxRGB=(255,255,255)</code><br><code>textPixelsAlpha=179</code><br><code>backgroundAlphaMax=0</code></td><td>—</td><td>白字不透明区域、背景全透明，就是「逐像素」的实际含义</td></tr>
+      <tr><td><code>textPixelsMaxRGB=(243,241,233)</code><br><code>textPixelsAlpha=255</code><br><code>backgroundAlphaMax=0</code></td><td>—</td><td>文字使用设计令牌米白 <code>#F3F1E9</code>；原始像素全不透明，背景全透明，就是「逐像素」的实际含义</td></tr>
     </table>
     <p class="muted">如果末尾出现 <code>metrics_valid=False</code> 或 <code>frozen_rect=False</code>，说明实测值没达到上面这些数（显示缩放、字体、被其它置顶窗口干扰都可能影响）。把那个 txt 发给售后即可核对，不用自己猜。</p>
   </section>
