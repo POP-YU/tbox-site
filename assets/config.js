@@ -44,7 +44,7 @@ window.TBOX_CONFIG = {
   //
   // 0.1.21 → 0.1.22 变的是什么：激活。
   //   0.1.21 的启动器把卡密发往 license.tbox.example.com（IANA 保留占位域名），
-  //   必然失败；0.1.22 改成离线签名卡密，卡密自带 RSA 签名，本机验、不联网。
+  //   必然失败；0.1.22 改成离线签名卡密，旧启动器 TB1. 卡为 RSA-SHA256；当前产品 TB-…#签名 卡为 Ed25519，本机验签。
   PRIMARY_DOWNLOAD: "https://github.com/POP-YU/tbox-site-preview/releases/download/v0.1.29/TBox-Setup.exe"
 };
 

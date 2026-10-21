@@ -29,7 +29,7 @@
       var ok = await crypto.subtle.verify({ name: "Ed25519" }, key, b64(sig), utf8(message));
       if (!ok) { output.textContent = "错误码 CARD_SIGNATURE_INVALID：签名校验失败 · 可重试"; return; }
       var expiry = new Date(Date.now() + DAYS[plan] * 86400000).toISOString().slice(0, 10);
-      output.textContent = "格式正确：" + plan + " · " + DAYS[plan] + " 天 · 预计到期 " + expiry + "（兑换后计算）。请在软件内完成完整验签";
+      output.textContent = "本地签名校验通过：" + plan + " · 标称 " + DAYS[plan] + " 天；本页不确认激活状态或到期时间，请在软件内核对实际授权";
     } catch (error) {
       output.textContent = "错误码 CARD_SIGNATURE_INVALID：" + error.message + " · 可重试";
     }
