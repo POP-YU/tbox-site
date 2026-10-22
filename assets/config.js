@@ -29,7 +29,7 @@ window.TBOX_CONFIG = {
   // 0.1.30 的包只有 TishiBox/、没有任何授权门，已撤下，不要再引用。
   // 安装版 TBox-Setup.exe 停在 0.1.29；要出安装版需先更新 commercial/TBox-Setup.iss。
   // 便携包 247MB 进不了 Pages 仓库（单文件上限 100MB），只能挂 Release。
-  MIRROR_2: "https://github.com/POP-YU/tbox-site-preview/releases/download/v0.1.31/TBox-0.1.31-portable.zip",
+  MIRROR_2: "https://github.com/POP-YU/tbox-site-preview/releases/download/v0.1.31/TBox-Setup-0.1.31.exe",
   VERSION: "0.1.31",
   SIZE: "107,771,642 bytes (102.78 MB)",
   SHA256: "5430CF006FCF6D0A91E07EEEA52FE4D795CAE548402543C71B141A5A06AF6D7F",
