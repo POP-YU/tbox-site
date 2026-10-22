@@ -31,8 +31,8 @@ window.TBOX_CONFIG = {
   // 便携包 247MB 进不了 Pages 仓库（单文件上限 100MB），只能挂 Release。
   MIRROR_2: "https://github.com/POP-YU/tbox-site-preview/releases/download/v0.1.31/TBox-0.1.31-portable.zip",
   VERSION: "0.1.31",
-  SIZE: "159,377,365 bytes (151.99 MB)",
-  SHA256: "0F94510E8799F8C15151329AF0D8C9425CAE527BDD7FA76968CC71296861230E",
+  SIZE: "107,771,642 bytes (102.78 MB)",
+  SHA256: "5430CF006FCF6D0A91E07EEEA52FE4D795CAE548402543C71B141A5A06AF6D7F",
   RELEASE_DATE: "2026-10-22",
   // 183MB 安装包不进 Pages 仓库（GitHub 单文件上限 100MB），走 Release 发布。
   // 主线路必须**直连文件**：原来指向 tianou10086-create/tbox-site/releases，
@@ -48,7 +48,11 @@ window.TBOX_CONFIG = {
   // 0.1.21 → 0.1.22 变的是什么：激活。
   //   0.1.21 的启动器把卡密发往 license.tbox.example.com（IANA 保留占位域名），
   //   必然失败；0.1.22 改成离线签名卡密，旧启动器 TB1. 卡为 RSA-SHA256；当前产品 TB-…#签名 卡为 Ed25519，本机验签。
-  PRIMARY_DOWNLOAD: "https://github.com/POP-YU/tbox-site-preview/releases/download/v0.1.31/TBox-0.1.31-portable.zip"
+  PRIMARY_DOWNLOAD: "https://github.com/POP-YU/tbox-site-preview/releases/download/v0.1.31/TBox-Setup-0.1.31.exe",
+  // 0.1.31 起主下载是安装版（用户级安装，不需要管理员）；便携版作为备选。
+  PORTABLE_URL: "https://github.com/POP-YU/tbox-site-preview/releases/download/v0.1.31/TBox-0.1.31-portable.zip",
+  PORTABLE_SIZE: "159,377,365 bytes (151.99 MB)",
+  PORTABLE_SHA256: "0F94510E8799F8C15151329AF0D8C9425CAE527BDD7FA76968CC71296861230E"
 };
 
 
