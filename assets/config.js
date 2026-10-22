@@ -25,12 +25,15 @@ window.TBOX_CONFIG = {
   // 所以它只能当备用，主线路必须指向真能下到文件的地址。
   MIRROR_1: "https://github.com/tianou10086-create/tbox-site/releases",
   // 备用线路 2 = 便携包（解压即用，不写注册表），同样走 Release 资产。
+  // 0.1.31 起主下载也指向便携包：授权门已经在产品本体里，不再依赖 TBoxLauncher.exe。
+  // 0.1.30 的包只有 TishiBox/、没有任何授权门，已撤下，不要再引用。
+  // 安装版 TBox-Setup.exe 停在 0.1.29；要出安装版需先更新 commercial/TBox-Setup.iss。
   // 便携包 247MB 进不了 Pages 仓库（单文件上限 100MB），只能挂 Release。
-  MIRROR_2: "https://github.com/POP-YU/tbox-site-preview/releases/download/v0.1.29/TBox-0.1.29-portable.zip",
-  VERSION: "0.1.29",
-  SIZE: "192,237,160 bytes (183.33 MB)",
-  SHA256: "BD7E66B6479AA9019CE40E254E0356976A39F75011CDDB9907F535E2EEFB7C1C",
-  RELEASE_DATE: "2026-10-21",
+  MIRROR_2: "https://github.com/POP-YU/tbox-site-preview/releases/download/v0.1.31/TBox-0.1.31-portable.zip",
+  VERSION: "0.1.31",
+  SIZE: "159,377,365 bytes (151.99 MB)",
+  SHA256: "0F94510E8799F8C15151329AF0D8C9425CAE527BDD7FA76968CC71296861230E",
+  RELEASE_DATE: "2026-10-22",
   // 183MB 安装包不进 Pages 仓库（GitHub 单文件上限 100MB），走 Release 发布。
   // 主线路必须**直连文件**：原来指向 tianou10086-create/tbox-site/releases，
   // 而那个仓库还没有 Release，点主线路等于走进「暂无发布版本」的死胡同
@@ -45,7 +48,7 @@ window.TBOX_CONFIG = {
   // 0.1.21 → 0.1.22 变的是什么：激活。
   //   0.1.21 的启动器把卡密发往 license.tbox.example.com（IANA 保留占位域名），
   //   必然失败；0.1.22 改成离线签名卡密，旧启动器 TB1. 卡为 RSA-SHA256；当前产品 TB-…#签名 卡为 Ed25519，本机验签。
-  PRIMARY_DOWNLOAD: "https://github.com/POP-YU/tbox-site-preview/releases/download/v0.1.29/TBox-Setup.exe"
+  PRIMARY_DOWNLOAD: "https://github.com/POP-YU/tbox-site-preview/releases/download/v0.1.31/TBox-0.1.31-portable.zip"
 };
 
 

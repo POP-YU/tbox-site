@@ -47,7 +47,7 @@
 <link rel="stylesheet" href="assets/style.css">
 <link rel="stylesheet" href="assets/design.css">
 <link rel="stylesheet" href="assets/design-tokens.css">
-<script src="assets/config.js?v=59730ffd6e"></script>
+<script src="assets/config.js?v=9231cbbe89"></script>
 <script defer src="assets/app.js"></script>
 <script defer src="assets/design.js"></script>
 <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml"></head>
@@ -66,7 +66,7 @@
     <h1>先把「不会」，<br><em>练成「见过」。</em></h1>
     <p class="lead">练习题一出现，参考答案就在屏幕边缘。点击穿透、不抢焦点——你不用切窗口，练习的节奏不被打断。</p>
     <div class="actions"><a class="btn primary" href="download.html">下载试用</a><a class="btn" href="activate.html">看卡密怎么用</a></div>
-    <p class="hero-meta">Windows 10 / 11 · 无需注册 · 不自动续费<br>免费试用 3 小时（按实际使用累计）· 支持选择、图形、英文题</p>
+    <p class="hero-meta">Windows 10 / 11 · 无需注册 · 不自动续费<br>免费试用 3 小时（只在实际运行时累计）· 支持选择、图形、英文题</p>
   </div>
   <figure class="hero-preview">
   <div class="hero-card" aria-label="训练辅助浮窗界面示意，非实际截图">
@@ -77,12 +77,12 @@
   </div>
 <figcaption class="visual-note">界面示意 · 非实际截图</figcaption>
 </figure>
-<ul class="hero-facts" aria-label="三个产品特点"><li><div><strong data-count="820" data-suffix="×150">820×150</strong> 固定浮窗<span>点击穿透，不抢焦点</span></div></li><li><div><strong data-count="7" data-suffix=" 天">7 天</strong> 体验卡<span>到期由启动器拦截</span></div></li><li><div><strong data-count="3" data-suffix=" 类">3 类</strong> 题型建议<span>选择 / 图形 / 英文</span></div></li></ul>
+<ul class="hero-facts" aria-label="三个产品特点"><li><div><strong data-count="820" data-suffix="×150">820×150</strong> 固定浮窗<span>点击穿透，不抢焦点</span></div></li><li><div><strong data-count="7" data-suffix=" 天">7 天</strong> 体验卡<span>到期由产品本体拦截</span></div></li><li><div><strong data-count="3" data-suffix=" 类">3 类</strong> 题型建议<span>选择 / 图形 / 英文</span></div></li></ul>
 </section>
 
 <section class="section compact-section"><div class="section-head"><div><span class="section-kicker">01 / 不打断你的节奏</span><h2>答案在旁，操作照常。</h2></div><p>透明字幕留在桌面，复杂判断留给你。不同设备与第三方软件表现，请先实测。</p></div>
 <div class="cards"><article class="card"><span class="card-number">01 — 显示</span><h3>文字清楚，背景留白</h3><p class="muted">纯白 70% 字幕，背景全透明。固定 820×150 显示区域，点击穿透、不抢焦点。</p></article><article class="card"><span class="card-number">02 — 内容保护</span><h3>共享表现，可以自己验</h3><p class="muted">浮窗采用 <strong>DisplayAffinity=0x11</strong> 内容保护与逐像素分层渲染。<a href="faq.html">会议、录屏与独占全屏表现以现场实测为准</a>。</p></article><article class="card"><span class="card-number">03 — 答案</span><h3>短题给结论，口述给段落</h3><p class="muted">选择题、图形题、英文题给短答案；口述模式显示完整段落。答案仅作建议，不替代你的判断。</p></article></div></section>
-<section class="section"><div class="section-head"><div><span class="section-kicker">02 / 把事实摆出来</span><h2>先核对，再信任。</h2></div><p>不靠销量或评价说服你。下面四件事，都有可复核的依据。</p></div><div class="trust-grid capability-bento"><article class="panel"><span class="badge">签名可核验</span><h3>文件签名，不是公有 CA 背书</h3><p class="muted">安装包、启动器与字幕浮窗使用本地根证书签名；本机已信任该根时，可验得 Valid。安装前仍需核对发布方提供的 SHA256。</p></article><article class="panel"><span class="badge">离线验签</span><h3>当前产品卡密采用 Ed25519 签名</h3><p class="muted">当前 TB-…#签名 卡由产品端用内置公钥本机验签；旧 TB1. 卡是另一套协议。授权校验与模型联网是两回事。答题所需网络与模型服务是另一条链路。</p></article><article class="panel"><span class="badge">本机保存</span><h3>本地数据分项保护</h3><p class="muted">设置、草稿与面试历史使用 Windows 当前用户 DPAPI；部分答题记录和产品卡授权文件仍是明文，不能宣称全部数据已加密。详见数据与隐私说明。</p></article><article class="panel"><span class="badge">3 小时试用门</span><h3>到期有明确状态</h3><p class="muted">未激活可免费试用 3 小时（按实际使用累计），期满显示“试用已结束 · 输入授权卡密后点击激活”。试用用量由本地文件与注册表各存一份、取较大值，删一处不足以重置。</p></article></div></section>
+<section class="section"><div class="section-head"><div><span class="section-kicker">02 / 把事实摆出来</span><h2>先核对，再信任。</h2></div><p>不靠销量或评价说服你。下面四件事，都有可复核的依据。</p></div><div class="trust-grid capability-bento"><article class="panel"><span class="badge">SHA256 可核验</span><h3>用哈希核对文件，不靠签名名头</h3><p class="muted">0.1.31 便携包不提供 Authenticode 签名，也不安装本地根证书——文件属性里看不到「数字签名」。完整性请只用发布页上的 SHA256 核对，校验不过就不要运行。历史上签名过的安装版停在 0.1.29。</p></article><article class="panel"><span class="badge">离线验签</span><h3>当前产品卡密采用 Ed25519 签名</h3><p class="muted">当前 TB-…#签名 卡由产品端用内置公钥本机验签；旧 TB1. 卡是另一套协议。授权校验与模型联网是两回事。答题所需网络与模型服务是另一条链路。</p></article><article class="panel"><span class="badge">本机保存</span><h3>本地数据分项保护</h3><p class="muted">设置、草稿与面试历史使用 Windows 当前用户 DPAPI；产品卡授权记录已改为设备密钥加密的 <code>entitlement.dat</code>，只保留一份明文兼容副本 <code>card-license.dat</code> 给旧启动器读到期时间。部分答题记录仍是明文，不能宣称全部数据已加密。详见数据与隐私说明。</p></article><article class="panel"><span class="badge">3 小时试用门</span><h3>到期有明确状态</h3><p class="muted">未激活可免费试用 3 小时，只在实际运行软件时累计——关掉就停表，不按自然时间扣。试用用量记在本机数据目录（设备密钥加密），不写注册表。期满后导航会收进「会员」页而不是把程序锁死，兑换成功后其余页面立即恢复。</p></article></div></section>
 
   <!-- 照搬竞品最强的一招：把「看不见」拆成四个具体场景 -->
   <section class="section">
@@ -169,7 +169,7 @@
       </article>
       <article class="card">
         <h3>卡密离线验签，不联网</h3>
-        <p class="muted">当前 <code>TB-…#签名</code> 产品卡采用 <strong>Ed25519 签名</strong>，由产品端离线验签，不自动续费。此路径生成的 <code>card-license.dat</code> 是明文；不能与旧启动器 <code>TB1.</code> 卡的 DPAPI 文件混为一谈。<strong>未激活仍可免费试用 3 小时（按实际使用累计）</strong>；旧版用的是占位地址，那些版本点「激活」仍会失败。</p>
+        <p class="muted">当前 <code>TB-…#签名</code> 产品卡采用 <strong>Ed25519 签名</strong>，由产品端离线验签，不自动续费。此路径的授权记录写在 <code>entitlement.dat</code>（设备密钥加密，内含卡密签名）与 <code>used-cards.dat</code>（加密台账）；<code>card-license.dat</code> 只是给旧启动器读到期时间的明文兼容副本，不参与授权判定。<strong>未激活仍可免费试用 3 小时（只在实际运行时累计）</strong>；旧版用的是占位地址，那些版本点「激活」仍会失败。</p>
       </article>
       <article class="card">
         <h3>首次安装会被 Windows 拦一次</h3>
@@ -183,7 +183,7 @@
   <section class="section">
     <h2>三步开始</h2>
     <div class="steps">
-      <div class="step"><div><strong>下载安装包</strong> —— <a href="download.html">下载页</a>有版本号与 SHA256，装完桌面出现 TBox 图标，启动器无黑窗。</div></div>
+      <div class="step"><div><strong>下载便携包</strong> —— <a href="download.html">下载页</a>有版本号与 SHA256；解压后双击 TishiBox.exe 即可，不装根证书、不需要管理员权限。</div></div>
       <div class="step"><div><strong>输入卡密激活</strong> —— 拿到卡密后，<a href="activate.html">激活页</a>有五步流程和失败排查。</div></div>
       <div class="step"><div><strong>跑一次 checkall</strong> —— 确认置顶、穿透、透明都正常，再在真实题面上试。</div></div>
     </div>
