@@ -13,11 +13,12 @@ window.TBOX_CONFIG = {
   // 便携包直链（与 PORTABLE_URL 同源，保留该键以兼容旧断言）。
   MIRROR_2: "https://github.com/tianou10086-create/tbox-site/releases/download/v0.1.37/TBox-0.1.37-portable.zip",
   VERSION: "0.1.37",
-  SIZE: "108,865,616 bytes（103.8 MB）",
-  SHA256: "AA18AFDB89AC42B67CC6BAE5D20DCB04D565FF5421BF5278E490C59CFEEDCF0B",
+  SIZE: "108,771,736 bytes（103.7 MB）",
+  SHA256: "E97A6863403CFF0579AA5830A7DA683484F127B2E5D52DE841933DF6361430ED",
   RELEASE_DATE: "2026-10-27",
   PRIMARY_DOWNLOAD: "https://github.com/tianou10086-create/tbox-site/releases/download/v0.1.37/TBox-Setup-0.1.37.exe",
   PORTABLE_URL: "https://github.com/tianou10086-create/tbox-site/releases/download/v0.1.37/TBox-0.1.37-portable.zip",
   PORTABLE_SIZE: "158,658,138 bytes（151.3 MB）",
   PORTABLE_SHA256: "962DA8FBEC843B897B68E3E3D050C73CD27C847690E590DFC86C9D8EDD298D0E"
 };
+
